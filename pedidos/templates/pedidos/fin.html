@@ -1,0 +1,26 @@
+<html>
+  
+  <body>
+
+    <h1>contactanos</h1>
+
+    {% if fz1.error %}
+
+    <p style="color: brown;">por favor revise este campo</p>
+    {% endif %}
+
+    <form  action="" method="POST" >{% csrf_token %}
+
+        <table>  
+          
+            {{fz1.as_table}}
+
+        </table>
+        
+        <input type="submit" value="Enviar">
+
+    </form>
+
+  </body>
+
+</html>
